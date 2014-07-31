@@ -3,10 +3,10 @@ Coveralls-merge
 
 Get coverage data on Python C extensions, on both the python side and
 the C side of the api.  The package combines the output from 
-`coverage-lcov:https://github.com/okkez/coveralls-lcov`_
+`coverage-lcov<https://github.com/okkez/coveralls-lcov>`_
 and 
-`coveralls:https://github.com/coagulant/coveralls-python`_ to upload 
-your coverage data to `coveralls:https://coveralls.io`_. 
+`coveralls<https://github.com/coagulant/coveralls-python>`_ to upload 
+your coverage data to `coveralls<https://coveralls.io>`_. 
 
 This only supports travis-ci.org.
 
@@ -19,8 +19,11 @@ Setup coveralls, and make sure that it's working with coveralls.io for the pytho
       - 2.7
 
     install:
+        # install lcov
       - "sudo apt-get -qq install lcov"
+        # install test runners, coveralls, and coveralls-merge
       - "pip install coveralls nose coveralls-merge"
+        # install the lcov parser
       - "gem install coveralls-lcov"
 
     script:
@@ -38,7 +41,7 @@ Setup coveralls, and make sure that it's working with coveralls.io for the pytho
       - coveralls-lcov -v -n coverage.info > coverage.c.json
 
       # upload
-      - coveralls-merge
+      - coveralls-merge coverage.c.json
     
 
 

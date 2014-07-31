@@ -10,12 +10,16 @@ coverage-lcov_ and coveralls_ to upload your coverage data to
 .. _coveralls: https://github.com/coagulant/coveralls-python
 .. _`coveralls.io`: https://coveralls.io
 
-This only supports travis-ci.org.
+This only supports `travis-ci`_.
+
+.. _`travis-ci`: https://travis-ci.org
 
 Usage
 -----
 
-Setup coveralls, and make sure that it's working with coveralls.io for the python portion. Then, to add c coverage, add a few lines to your .travis.yml::
+Setup coveralls, and make sure that it's working with coveralls.io for
+the python portion. Then, to add c coverage, add a few lines to your
+.travis.yml::
 
     python:
       - 2.7

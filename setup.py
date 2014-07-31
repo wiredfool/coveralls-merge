@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='coveralls-merge',
-    version='0.0.1',
+    version='0.0.2',
     packages=['coveralls_merge'],
     url='http://github.com/wiredfool/coveralls-merge',
     license='MIT',

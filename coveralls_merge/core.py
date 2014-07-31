@@ -59,7 +59,7 @@ class merger(object):
             return json.dumps(self.merged, indent=2)
         else:
             response = requests.post(API_URL, files={'json_file': json.dumps(self.merged)})
-            response.raise_for_error()
+            response.raise_for_status()
             return response.json()
 
 def main():

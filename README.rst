@@ -3,10 +3,12 @@ Coveralls-merge
 
 Get coverage data on Python C extensions, on both the python side and
 the C side of the api.  The package combines the output from 
-`coverage-lcov<https://github.com/okkez/coveralls-lcov>`_
-and 
-`coveralls<https://github.com/coagulant/coveralls-python>`_ to upload 
-your coverage data to `coveralls<https://coveralls.io>`_. 
+coverage-lcov_ and coveralls_ to upload your coverage data to 
+`coveralls.io`_. 
+
+.. _coverage-lcov: https://github.com/okkez/coveralls-lcov
+.. _coveralls: https://github.com/coagulant/coveralls-python
+.. _`coveralls.io`: https://coveralls.io
 
 This only supports travis-ci.org.
 
